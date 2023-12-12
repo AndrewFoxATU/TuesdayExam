@@ -18,16 +18,21 @@ public class Main {
         User[1].getUserInput();
         User[1].getIDInput();
         User[1].getTypeInput();
-
+        String name = User[1].getUserName();
+        String ID = User[1].getID();
+        String Type = User[1].getType();
 
         try {
-            if (getUserName().length > min && getUserName().length < max) {
-                if (getID().lenght = 8) {
-                    if (getType() == "Freezer" || getType() == "Stern" ||  getType() == "Outrigger"){
+            if (name.length() > min && name.length() < max) {
+                if (ID.length() == 8) {
+                    if (Type == "Freezer" || Type == "Stern" ||  Type == "Outrigger"){
 
                     }
+                    else System.out.println("Invalid Trawler Type");
                 }
+                else System.out.println("Invalid Transponder ID number");
             }
+            else System.out.println("Invalid Name provided is not valid");
         }
         catch (InputMismatchException e){
             System.out.println("Invalid Trawler Type");

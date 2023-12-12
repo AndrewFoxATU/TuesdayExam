@@ -38,18 +38,18 @@ public class Trawler {
     public void getUserInput(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Name (minimum 7 characters, maximum 24 characters): ");
-        this.setUserName(Scanner.nextLine());
+        this.setUserName(scanner.nextLine());
     }
     public void getIDInput(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter ID (must be an eleven-digit number): ");
-        this.setID(Scanner.nextLine());
+        this.setID(scanner.nextLine());
     }
 
     public void getTypeInput(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Type (Freezer, stern or Outrigger): ");
-        this.setType(Scanner.nextLine());
+        this.setType(scanner.nextLine());
     }
 
     @Override
